@@ -113,6 +113,12 @@ export default {
           this.size.width = parseInt(setting[1])
           this.size.height = parseInt(setting[2])
           break
+        case 'MINY':
+          this.graphMinY = parseFloat(setting[1])
+          break
+        case 'MAXY':
+          this.graphMaxY = parseFloat(setting[1])
+          break
       }
     })
     this.items = this.items.map((item) => {
