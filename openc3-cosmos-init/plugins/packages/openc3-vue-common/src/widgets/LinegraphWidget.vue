@@ -35,6 +35,8 @@
     :width="size.width"
     :style="computedStyle"
     :time-zone="this.screenTimeZone"
+    :graph-min-y="graphMinY"
+    :graph-max-y="graphMaxY"
     @pause="() => (state = 'pause')"
     @start="() => (state = 'start')"
     hide-toolbar
